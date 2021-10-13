@@ -1,0 +1,13 @@
+.idea/
+venv/
+*.pyc
+media/*
+db.sqlite3
+.coverage
+htmlcov/*
+.mypy_cache/
+__pycach__/
+*.py[cod]
+docker-compose.yaml
+resurces/products.json
+botrf
