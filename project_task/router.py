@@ -1,11 +1,13 @@
-from store.viewsets import ProductViewset #, ProductDetailViewset
-from rest_framework import routers
+# from django.urls import path
 
 
 
 
-router = routers.DefaultRouter()
-router.register('product', ProductViewset)
-# router.register('product/<int:pk>/', ProductDetailViewset)
+# router = routers.DefaultRouter()
+# router.register(r'product', ProductViewset, basename='product')
 
-urlpatterns = router.urls
+# urlpatterns = router.urls
+
+# urlpatterns += [
+#     path('product/<int:pk>/', ProductDetailViewset.as_view(), name='product_detail'),
+# ]
