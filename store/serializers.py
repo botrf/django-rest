@@ -26,7 +26,7 @@ class ProductDetailSerializer(serializers.ModelSerializer):
     images = ProductImageSerializer(many=True)
     class Meta:
         model = Product
-        fields = ("name", "price", "description", "data_create", "images",)
+        fields = ("id", "name", "price", "description", "data_create", "images",)
 
     def get_images(self, obj):
         images = ProductImage.objects.filter(product=obj).all()
@@ -37,4 +37,4 @@ class ProductDetailSerializer(serializers.ModelSerializer):
 class ProductCRUDSerializer(serializers.ModelSerializer):
     class Meta:
         model = Product
-        fields = ("name", "sku", "price", "description")
+        fields = ("id", "name", "sku", "price", "description")
