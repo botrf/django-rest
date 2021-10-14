@@ -32,3 +32,9 @@ class ProductDetailSerializer(serializers.ModelSerializer):
         images = ProductImage.objects.filter(product=obj).all()
         images_serializer = ProductImageSerializer(images)
         return images_serializer.data
+
+
+class ProductCRUDSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Product
+        fields = ("name", "sku", "price", "description")

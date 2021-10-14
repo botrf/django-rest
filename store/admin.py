@@ -4,7 +4,7 @@ from .models import Product, ProductImage
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'price', 'description')
+    list_display = ('id', 'name', 'price', 'description', 'data_create', 'sku')
 
 
 class ProductImageAdmin(admin.ModelAdmin):
